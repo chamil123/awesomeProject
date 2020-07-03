@@ -7,12 +7,14 @@ import AuthScreen from './screens/AuthScreen';
  class App extends Component{
     render(){
         return(
-            <Router>
-                  <Scene key="root">
+          <Router>
+              <Scene key="root">
+                 
+                  <Scene key="loading" component={LoadingScreen} initial={true} ></Scene>
+                  <Scene key="auth" component={AuthScreen}></Scene>
+              </Scene>
 
-                  </Scene>
-               
-            </Router>
+          </Router>
 
         );
     }
